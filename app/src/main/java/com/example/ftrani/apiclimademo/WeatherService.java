@@ -10,9 +10,6 @@ import retrofit2.http.Query;
 
 public interface WeatherService {
 
-    //http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1
-    //1c3c919b8dd2ca49267436822943cc8c
-
     @GET("weather")
     Call<City> getCity(@Query("q") String city, @Query("appid") String key);
 
